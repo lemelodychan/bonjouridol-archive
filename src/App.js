@@ -1,12 +1,12 @@
 import { ReactComponent as Logo } from "./assets/logo_normal_pink.svg";
-import { FaArrowRightLong } from "react-icons/fa6";
+import { IoArrowForwardOutline } from "react-icons/io5";
 import './App.scss';
 
 function Button() {
   return (
     <button className="btn">
       <span>I'm a button</span>
-      <FaArrowRightLong />
+      <IoArrowForwardOutline />
     </button>
   );
 }
