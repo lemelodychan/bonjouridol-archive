@@ -5,7 +5,8 @@ import './App.scss';
 function Button() {
   return (
     <button className="btn">
-      <span>I'm a button</span><FaArrowRightLong />
+      <span>I'm a button</span>
+      <FaArrowRightLong />
     </button>
   );
 }
