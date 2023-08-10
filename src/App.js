@@ -1,5 +1,5 @@
 import { ReactComponent as Logo } from "./assets/logo_normal_pink.svg";
-import {IoArrowForwardOutline} from "react-icons/io5";
+import { IoArrowForwardOutline } from "react-icons/io5";
 import './App.scss';
 
 function Button() {
