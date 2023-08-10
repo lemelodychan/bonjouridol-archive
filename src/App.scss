@@ -1,0 +1,45 @@
+@use 'styles/mixins';
+@use 'styles/variables';
+
+html, body {
+  font-family: var(--font-text);
+  font-size: var(--font-size);
+
+  background-color: var(--light-grey);
+  color: var(--dark-grey);
+}
+
+.header {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  border: none;
+  border-radius: 16px;
+  color: var(--white);
+  font-weight: bold;
+  font-size: var(--font-size);
+  line-height: 1.5;
+  letter-spacing: 5%;
+  text-transform: uppercase;
+
+  gap: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 12px;
+
+  background-image: var(--bi-gradient-1);
+  background-position: center right;
+  background-size: 200% 100%;
+  transition: var(--transi);
+
+  &:hover{
+    background-position: center left;
+  }
+}

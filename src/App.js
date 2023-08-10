@@ -1,22 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { ReactComponent as Logo } from "./assets/logo_normal_pink.svg";
+import { FaArrowRightLong } from "react-icons/fa6";
+import './App.scss';
+
+function Button() {
+  return (
+    <button className="btn">
+      <span>I'm a button</span><FaArrowRightLong />
+    </button>
+  );
+}
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div className="global">
+      <header className="header">
+        <Logo style={{ height: 200 }} />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Coming soon
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Button />
       </header>
     </div>
   );
