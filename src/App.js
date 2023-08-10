@@ -5,7 +5,7 @@ import './App.scss';
 function Button() {
   return (
     <button className="btn">
-      <span>I'm a button</span>
+      <span>Visit the website</span>
       <IoArrowForwardOutline />
     </button>
   );
@@ -20,7 +20,9 @@ function App() {
         <p>
           Coming soon
         </p>
-        <Button />
+        <a href="https://bonjouridol.com/">
+          <Button />
+        </a>
       </header>
     </div>
   );

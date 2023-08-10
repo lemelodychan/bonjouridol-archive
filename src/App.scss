@@ -18,28 +18,37 @@ html, body {
   justify-content: center;
 }
 
-.btn {
-  border: none;
-  border-radius: 16px;
-  color: var(--white);
-  font-weight: bold;
-  font-size: var(--font-size);
-  line-height: 1.5;
-  letter-spacing: 5%;
-  text-transform: uppercase;
+a {
+  text-decoration: none !important;
 
-  gap: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 8px 12px;
+  .btn {
+    border: none;
+    border-radius: 16px;
+    color: var(--white);
+    font-family: var(--font-text);
+    font-weight: bold;
+    font-size: var(--font-size);
+    line-height: 1.5;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
 
-  background-image: var(--bi-gradient-1);
-  background-position: center right;
-  background-size: 200% 100%;
-  transition: var(--transi);
+    gap: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 12px;
 
-  &:hover{
-    background-position: center left;
+    background-image: var(--bi-gradient-1);
+    background-position: center right;
+    background-size: 200% 100%;
+    transition: var(--transi);
+
+    &:hover{
+      background-position: center left;
+    }
+
+    > span {
+      text-decoration: none !important;
+    }
   }
 }
