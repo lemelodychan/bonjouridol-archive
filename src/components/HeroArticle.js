@@ -16,7 +16,10 @@ function HeroArticle() {
             <div className="Content">
                 <div className="Tags">
                     {latestPost && (
-                        <span className="Tag">{latestPost[0].tags}</span>
+                        <span className="Tag">{latestPost[0].tags[0]}</span>
+                    )}
+                    {latestPost && (
+                        <span className="Tag">{latestPost[0].tags[1]}</span>
                     )}
                 </div>
                 {latestPost && (

@@ -9,6 +9,31 @@ html, body {
   color: var(--dark-grey);
 }
 
+h2 {
+  display: grid;
+  grid-template-columns: max-content auto;
+  grid-gap: 16px;
+  align-items: center;
+  width: 100%;
+
+  > span {
+    display: inline-block;
+    width: fit-content;
+    font-family: var(--font-title);
+    font-size: var(--font-size-xl);
+    color: var(--dark-grey);
+    line-height: 32px;
+  }
+
+  &:after {
+    display: block;
+    height: 2px;
+    width: 100%;
+    content: " ";
+    background-image: var(--bi-gradient-2);
+  }
+}
+
 .header {
   text-align: center;
   min-height: 100vh;
@@ -21,6 +46,11 @@ html, body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  .logo {
+    margin: 24px 0;
+  }
+
 }
 
 a {

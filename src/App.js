@@ -5,6 +5,7 @@ import Button from './components/IconButton.js';
 import { IoArrowForwardOutline } from "react-icons/io5";
 import './App.scss';
 import HeroArticle from './components/HeroArticle';
+import LatestPosts from './components/LatestPosts';
 
 function App() {
   const [document] = useSinglePrismicDocument('homepage')
@@ -12,11 +13,10 @@ function App() {
   return (
     <div className="global">
       <header className="header">
-        <Logo style={{ height: 200 }} />
-        <a href="https://bonjouridol.com/">
-          <Button variant={"mainPink"} textValue={"Visit the site"} icon={<IoArrowForwardOutline />} />
-        </a>
-        <HeroArticle />
+        <div className="logo">
+          <Logo style={{ height: 80 }} />
+        </div>
+        <LatestPosts />
       </header>
       <div className="home-background">
         {document && (
