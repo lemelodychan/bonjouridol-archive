@@ -6,6 +6,7 @@ import './LatestPosts.scss';
 import { IoArrowForwardOutline } from "react-icons/io5";
 
 import HeroArticle from './HeroArticle';
+import Button from './IconButton.js';
 
 function LatestPosts() {
     const results = useAllPrismicDocumentsByType("articles");
@@ -43,6 +44,10 @@ function LatestPosts() {
                             </h3>
                         )}
                     </div>
+                </a>
+
+                <a href="https://bonjouridol.com/">
+                    <Button variant={"mainPink"} textValue={"See more articles"} icon={<IoArrowForwardOutline />} />
                 </a>
 
             </div>
