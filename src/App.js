@@ -1,9 +1,10 @@
-import { PrismicRichText, PrismicImage, useSinglePrismicDocument } from '@prismicio/react'
+import { PrismicRichText, PrismicImage, useSinglePrismicDocument, useAllPrismicDocumentsByType } from '@prismicio/react'
 
 import { ReactComponent as Logo } from "./assets/logo_normal_white.svg";
-import Button from './components/button.js';
-import './App.scss';
+import Button from './components/IconButton.js';
 import { IoArrowForwardOutline } from "react-icons/io5";
+import './App.scss';
+import HeroArticle from './components/HeroArticle';
 
 function App() {
   const [document] = useSinglePrismicDocument('homepage')
@@ -15,6 +16,7 @@ function App() {
         <a href="https://bonjouridol.com/">
           <Button variant={"mainPink"} textValue={"Visit the site"} icon={<IoArrowForwardOutline />} />
         </a>
+        <HeroArticle />
       </header>
       <div className="home-background">
         {document && (
