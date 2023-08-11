@@ -1,4 +1,4 @@
-import { PrismicImage, PrismicText,useAllPrismicDocumentsByType } from '@prismicio/react'
+import { PrismicImage, PrismicLink, PrismicText, useAllPrismicDocumentsByType } from '@prismicio/react'
 
 import Button from './IconButton.js';
 import { IoArrowForwardOutline } from "react-icons/io5";
@@ -29,9 +29,11 @@ function HeroArticle() {
                         </span>
                     </h1>
                 )}
-                <a href="https://bonjouridol.com/">
-                    <Button variant={"mainPink"} textValue={"Read more"} icon={<IoArrowForwardOutline />} />
-                </a>
+                {latestPost && (
+                    <a href={latestPost[0].uid}>
+                        <Button variant={"mainPink"} textValue={"Read more"} icon={<IoArrowForwardOutline />} />
+                    </a>
+                )}
             </div>
             <div className="FeaturedImage">
                 {latestPost && (
