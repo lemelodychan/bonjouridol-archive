@@ -11,18 +11,20 @@
     padding: 0 32px;
   
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: flex-start;
-    gap: 32px;
+    gap: 48px;
   
     .logo {
-      margin: 24px 0;
+        margin: 24px 0;
     }
 
     nav {
         .navbar-menu {
             display: flex;
             gap: 32px;
+            position: relative;
+            top: -40px;
 
             a.navbar-item {
                 color: var(--white);

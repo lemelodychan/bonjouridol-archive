@@ -3,14 +3,14 @@ import { NavLink } from "react-router-dom";
 
 import '../App.scss';
 import './Navbar.scss';
-import { ReactComponent as Logo } from "../assets/logo_normal_white.svg";
+import Logo from "../assets/logo_normal_white.svg";
 
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
   return (
     <div className="menu">
         <div className="logo">
-          <Logo style={{ height: 80 }} />
+            <img src={Logo} alt="React Logo" />
         </div>
 
         <nav className="navbar" role="navigation" aria-label="main navigation">
