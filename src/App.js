@@ -1,10 +1,7 @@
 import { PrismicRichText, PrismicImage, useSinglePrismicDocument, useAllPrismicDocumentsByType } from '@prismicio/react'
 
 import { ReactComponent as Logo } from "./assets/logo_normal_white.svg";
-import Button from './components/IconButton.js';
-import { IoArrowForwardOutline } from "react-icons/io5";
 import './App.scss';
-import HeroArticle from './components/HeroArticle';
 import LatestPosts from './components/LatestPosts';
 
 function App() {

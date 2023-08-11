@@ -1,4 +1,4 @@
-import { PrismicImage, PrismicRichText, PrismicText,useAllPrismicDocumentsByType } from '@prismicio/react'
+import { PrismicImage, PrismicText,useAllPrismicDocumentsByType } from '@prismicio/react'
 
 import '../App.scss';
 import './LatestPosts.scss';
@@ -11,10 +11,7 @@ import Button from './IconButton.js';
 function LatestPosts() {
     const results = useAllPrismicDocumentsByType("articles");
     const latestPosts = results[0]
-    console.log("Post 2:", latestPosts)
-
-    const Post3 = results[2]
-    const Post4 = results[3]
+    // console.log("Post 2:", latestPosts)
     
     return (
         <div className="LatestPosts">

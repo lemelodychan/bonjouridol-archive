@@ -1,4 +1,4 @@
-import { PrismicImage, PrismicRichText, PrismicText,useAllPrismicDocumentsByType } from '@prismicio/react'
+import { PrismicImage, PrismicText,useAllPrismicDocumentsByType } from '@prismicio/react'
 
 import Button from './IconButton.js';
 import { IoArrowForwardOutline } from "react-icons/io5";
@@ -23,7 +23,11 @@ function HeroArticle() {
                     )}
                 </div>
                 {latestPost && (
-                    <PrismicRichText field={latestPost[0].data.title} />
+                    <h1>
+                        <span>
+                            <PrismicText field={latestPost[0].data.title} />
+                        </span>
+                    </h1>
                 )}
                 <a href="https://bonjouridol.com/">
                     <Button variant={"mainPink"} textValue={"Read more"} icon={<IoArrowForwardOutline />} />
@@ -37,5 +41,5 @@ function HeroArticle() {
         </div>
     );
 }
-  
+
 export default HeroArticle;
